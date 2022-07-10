@@ -10,7 +10,7 @@ function makeHome() {
 
     const heading = document.createElement('h2');
     heading.textContent = 'Gold Black';
-    heading.classList.add('heading');
+    heading.classList.add('heading-home');
 
     const image = document.createElement('img');
     img.src = './images/coffee.jpg';
