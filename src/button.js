@@ -1,5 +1,5 @@
-export function makeButton(text, loadPage) {
-    const button = createElement('button');
+export default function makeButton(text, loadPage) {
+    const button = document.createElement('button');
 
     button.classList.add('button-nav');
     button.textContent = text;

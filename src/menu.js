@@ -1,4 +1,4 @@
-export function loadMenu() {
+export default function loadMenu() {
     const main = document.querySelector('main');
     main.innerHTML = '';
     main.appendChild(makeMenu());
@@ -15,10 +15,10 @@ function makeMenu() {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('container-menu');
 
-    menuContainer.appendChild(makeMenuItem('espresso'));
-    menuContainer.appendChild(makeMenuItem('latte'));
-    menuContainer.appendChild(makeMenuItem('capuccino'));
-    menuContainer.appendChild(makeMenuItem('americano'));
+    menuContainer.appendChild(makeMenuItem('Espresso'));
+    menuContainer.appendChild(makeMenuItem('Latte'));
+    menuContainer.appendChild(makeMenuItem('Capuccino'));
+    menuContainer.appendChild(makeMenuItem('Americano'));
 
     container.appendChild(heading);
     container.appendChild(menuContainer);
@@ -31,7 +31,7 @@ function makeMenuItem(name) {
     item.classList.add('menu-item');
 
     const image = document.createElement('img');
-    image.src = `./images/${name}.jpg`;
+    image.src = `./images/${name.toLowerCase()}.jpg`;
     image.alt = name;
 
     const heading = document.createElement('h3');

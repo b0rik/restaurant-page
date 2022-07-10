@@ -1,4 +1,4 @@
-export function loadContact() {
+export default function loadContact() {
     const main = document.querySelector('main');
     main.innerHTML = '';
     main.appendChild(makeContact());

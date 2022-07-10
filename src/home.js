@@ -1,4 +1,4 @@
-export function loadHome() {
+export default function loadHome() {
     const main = document.querySelector('main');
     main.innerHTML = '';
     main.appendChild(makeHome());
@@ -13,11 +13,11 @@ function makeHome() {
     heading.classList.add('heading-home');
 
     const image = document.createElement('img');
-    img.src = './images/coffee.jpg';
-    img.alt = 'coffee image';
+    image.src = './images/coffee.jpg';
+    image.alt = 'coffee image';
 
     const paragraph = document.createElement('p');
-    p.textContent = 'A cup of coffee lasts only a moment, but it is that moment that makes your day better.';
+    paragraph.textContent = 'A cup of coffee lasts only a moment, but it is that moment that makes your day better.';
 
     container.appendChild(heading);
     container.appendChild(image);

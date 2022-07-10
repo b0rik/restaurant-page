@@ -5,7 +5,7 @@ import loadMenu from './menu';
 import loadContact from './contact';
 
 
-export function makeNav() {
+export default function makeNav() {
     const nav = document.createElement('nav');
     
     nav.appendChild(makeLogo());
