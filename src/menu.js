@@ -15,10 +15,10 @@ function makeMenu() {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('container-menu');
 
-    menuContainer.appendChild('espresso');
-    menuContainer.appendChild('latte');
-    menuContainer.appendChild('capuccino');
-    menuContainer.appendChild('americano');
+    menuContainer.appendChild(makeMenuItem('espresso'));
+    menuContainer.appendChild(makeMenuItem('latte'));
+    menuContainer.appendChild(makeMenuItem('capuccino'));
+    menuContainer.appendChild(makeMenuItem('americano'));
 
     container.appendChild(heading);
     container.appendChild(menuContainer);
