@@ -1,6 +1,7 @@
 import makeHeader from './header';
 import makeMain from './main';
 import loadHome from './home';
+import { setActiveButton } from './button';
 
 export default function initPage() {
     const content = document.querySelector('#content');
@@ -9,4 +10,5 @@ export default function initPage() {
     content.appendChild(makeMain());
 
     loadHome();
+    setActiveButton(document.querySelector('.button-nav'));
 }

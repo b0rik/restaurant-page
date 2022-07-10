@@ -21,3 +21,5 @@ function setActiveButton(button) {
 
     button.classList.add('active');
 }
+
+export {setActiveButton };
