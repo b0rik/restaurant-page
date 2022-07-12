@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeFooter)\n/* harmony export */ });\nfunction makeFooter() {\r\n    const footer = document.createElement('footer');\r\n\r\n    footer.classList.add('footer');\r\n    footer.textContent = 'Copyright &copy  Boris Glushko';\r\n\r\n    return footer;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeFooter)\n/* harmony export */ });\nfunction makeFooter() {\r\n    const footer = document.createElement('footer');\r\n\r\n    footer.classList.add('footer');\r\n    footer.innerHTML = 'Copyright &copy  Boris Glushko';\r\n\r\n    return footer;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
 
 /***/ }),
 
