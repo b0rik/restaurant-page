@@ -30,6 +30,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeFooter)\n/* harmony export */ });\nfunction makeFooter() {\r\n    const footer = document.createElement('footer');\r\n\r\n    footer.classList.add('footer');\r\n    footer.textContent = 'Copyright &copy  Boris Glushko';\r\n\r\n    return footer;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -106,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initPage)\n/* harmony export */ });\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/main.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n\r\n\r\n\r\n\r\n\r\nfunction initPage() {\r\n    const content = document.querySelector('#content');\r\n\r\n    content.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n    content.appendChild((0,_main__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n    (0,_button__WEBPACK_IMPORTED_MODULE_3__.setActiveButton)(document.querySelector('.button-nav'));\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initPage)\n/* harmony export */ });\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/main.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nfunction initPage() {\r\n    const content = document.querySelector('#content');\r\n\r\n    content.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n    content.appendChild((0,_main__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n    content.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n    (0,_button__WEBPACK_IMPORTED_MODULE_4__.setActiveButton)(document.querySelector('.button-nav'));\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/page.js?");
 
 /***/ })
 
